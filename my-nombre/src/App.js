@@ -1,6 +1,11 @@
 //Importamos libreria y la funcion useState.
 import React, { useState } from 'react';
 
+/*Crea un componente que tome un arreglo de nombres y muestre la
+cantidad de nombres que comienzan con una letra específica
+ingresada por el usuario. Utiliza una variable de estado para guardar
+el arreglo y la letra ingresada.*/
+
 //Declaramos la funcion Lista de elementos.
 function ListaDeElementos() {
   /*Utilizamos el useState para declarar 3 variabes 
