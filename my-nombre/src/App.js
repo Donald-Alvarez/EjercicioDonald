@@ -21,16 +21,13 @@ function ListaDeElementos() {
     /*prevenir el comportamiento por defecto de la acción 
     de enviar el formulario, lo cual es re-cargar la página.*/
     event.preventDefault();
-    // Elimina todos los espacios en blanco  de la cadena. 
-    if (nuevoNombre.trim() !== '') {
       /*setNombres actualiza el estado de la lista Nombres
       con el nuevo nombre agregado por medio del operador de
       propagacion ...Nombres.*/
-      setNombres([...Nombres, nuevoNombre]);
+      setNombres([...Nombres, nuevoNombre.trim()]);
       //actualiza el estado del input dejando en blanco una ves enviado el formulario.
       setNuevonombre('');
   
-    }
   };
   //Funciones que manejan el estado de cambio de del 
   //valor que contiene input actualizandolo por nuevonombre y nuevaletra. 
